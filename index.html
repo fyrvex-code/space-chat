@@ -1386,6 +1386,34 @@
       50%{transform:translateY(-8px)}
     }
 
+  
+    @media (max-width:768px){
+      .hero-stage{
+        display:none !important;
+      }
+      .hero{
+        min-height:auto;
+      }
+      .hero-grid{
+        grid-template-columns:1fr !important;
+        gap:18px !important;
+      }
+      .hero-copy{
+        max-width:100%;
+      }
+      .hero-copy h1,
+      .hero-copy p,
+      .hero-copy .lead{
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      .hero-actions,
+      .hero-meta{
+        justify-content:center;
+      }
+    }
+
   </style>
 </head>
 <body>
