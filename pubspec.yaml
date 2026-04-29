@@ -1,0 +1,38 @@
+name: space_chat
+description: Space chat messenger
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.1.1
+  firebase_auth: ^6.0.2
+  supabase_flutter: ^2.12.1
+  image_picker: ^1.2.0
+  shared_preferences: ^2.5.3
+  path_provider: ^2.1.5
+  zego_uikit_prebuilt_call: 4.22.5
+  zego_uikit_signaling_plugin: 2.8.20
+
+dependency_overrides:
+  zego_zim: 2.21.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+
+flutter_launcher_icons:
+  android: true
+  image_path: assets/icon/icon.png
